@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+
+[[mods]]
+    modId="scarecrows"
+    version="${file.jarVersion}"
+    displayName="Scarecrows"
+    logoFile="logo.png"
+    credits="Sarinsa (Coder)"
+    authors="Frenderman (Concepts and art)"
+    description="Scarecrows that scare your crows and the crows are scared"
+
+[[dependencies.scarecrows]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.1.4,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.scarecrows]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
