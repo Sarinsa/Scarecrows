@@ -1,7 +1,9 @@
 package com.sarinsa.scarecrows.common.core;
 
 import com.sarinsa.scarecrows.common.core.register.ScarecrowsItems;
+import com.sarinsa.scarecrows.common.event.VillagerTradeEvents;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,6 +18,8 @@ public class Scarecrows {
 
     public Scarecrows() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        MinecraftForge.EVENT_BUS.register(new VillagerTradeEvents());
 
         ScarecrowsItems.ITEMS.register(eventBus);
     }
