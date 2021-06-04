@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "scarecrows:gray_scarecrow"
+    ]
+  },
+  "criteria": {
+    "has_carved_pumpkin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:carved_pumpkin"
+          }
+        ]
+      }
+    },
+    "has_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_wool"
+          }
+        ]
+      }
+    },
+    "has_wheat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/wheat"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "scarecrows:gray_scarecrow"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_carved_pumpkin",
+      "has_wool",
+      "has_wheat",
+      "has_the_recipe"
+    ]
+  ]
+}

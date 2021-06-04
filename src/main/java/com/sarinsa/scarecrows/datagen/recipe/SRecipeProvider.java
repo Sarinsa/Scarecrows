@@ -49,7 +49,6 @@ public class SRecipeProvider extends RecipeProvider {
         recipeBuilder.define('S', Tags.Items.RODS_WOODEN);
         recipeBuilder.unlockedBy("has_carved_pumpkin", has(Items.CARVED_PUMPKIN));
         recipeBuilder.unlockedBy("has_wool", has(wool));
-        recipeBuilder.unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN));
         recipeBuilder.unlockedBy("has_wheat", has(Tags.Items.CROPS_WHEAT));
         recipeBuilder.save(consumer);
     }
